@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedinIn,
@@ -6,20 +7,24 @@ import {
   faSquareBehance,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import Pfp from "../assets/pfp.png";
-import Navbar from "./Navbar";
+import Pfp from "../assets/LorikRama.jpeg";
 const Home = () => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+    console.log(element);
+  };
   return (
     <div>
       <div id="Home">
         <div className="social-links">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/lorikramaa" target="_blank">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
-          <a href="#">
+          <a href="https://www.github.com/lorikramaa" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="#">
+          <a href="https://www.behance.net/lorikramaa" target="_blank">
             <FontAwesomeIcon icon={faSquareBehance} />
           </a>
         </div>
@@ -30,34 +35,31 @@ const Home = () => {
                 Hi! <br /> I'm Lorik Rama
               </h1>
               <h3>Front-end Developer</h3>
-              <a href="#" className="contact-home">
+              <Link
+                to="#Contact"
+                className="contact-home"
+                onClick={() => scrollToSection("Contact")}
+              >
                 Contact me <FontAwesomeIcon icon={faPaperPlane} />{" "}
-              </a>
+              </Link>
+
+              <div className="social-links-home">
+                <a
+                  href="https://www.linkedin.com/in/lorikramaa"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faLinkedinIn} />
+                </a>
+                <a href="https://www.github.com/lorikramaa" target="_blank">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a href="https://www.behance.net/lorikramaa" target="_blank">
+                  <FontAwesomeIcon icon={faSquareBehance} />
+                </a>
+              </div>
             </div>
             <div className="right-home">
-              <svg
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                class="profile__image__svg"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                  130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                  97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                  165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                  129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image class="home_blob-img" x="12" y="18" xlinkHref={Pfp} />
-                </g>
-              </svg>
+              <img src={Pfp} className="personal-img" />
             </div>
           </div>
         </div>
