@@ -231,6 +231,34 @@ body {
   text-shadow: -1px 0 rgba(255, 255, 255, 0.2), 0 1px rgba(255, 255, 255, 0.2),
     1px 0 rgba(255, 255, 255, 0.2), 0 -1px rgba(255, 255, 255, 0.2);
 }
+.experience-title {
+  position: relative;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: #f1f1f1;
+}
+.experience-title:after {
+  font-family: "Montserrat", sans-serif;
+  content: "Experience" !important;
+  position: absolute;
+  z-index: -1;
+  top: -7%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(50px, 10vw, 100px);
+  font-weight: 800;
+  line-height: 1;
+  color: #222;
+  text-shadow: -1px 0 rgba(255, 255, 255, 0.2), 0 1px rgba(255, 255, 255, 0.2),
+    1px 0 rgba(255, 255, 255, 0.2), 0 -1px rgba(255, 255, 255, 0.2);
+}
 
 #Skills {
   margin-top: 100px;
@@ -329,7 +357,9 @@ body {
 .skills-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 35px;
+
   flex-wrap: wrap;
 }
 .skill {
@@ -392,6 +422,39 @@ body {
 }
 .fa-figma {
   color: rgb(131, 58, 180);
+}
+/* experience-container */
+#Experience {
+  margin-top: 30px;
+}
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  /* height: 80vh; */
+  padding: 70px 0;
+  justify-content: center;
+  align-items: center;
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  color: #fff;
+  margin: 30px 0;
+}
+.experience-container .info-title {
+  display: flex;
+  justify-content: space-between;
+}
+.experience-container .info-title h3 {
+  font-size: 25px;
+}
+.experience-container .info-company {
+  color: #1a89ff;
+  margin: 8px 0;
+}
+.experience-container .info-desc {
+  color: #c1c1c1;
 }
 /* wokrs */
 #Works {
@@ -680,7 +743,10 @@ body {
     height: 60vh;
   }
   div#About {
-    padding: 50px 0;
+    padding: 100px 0 0 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
   }
 }
 @media screen and (max-width: 600px) {
@@ -696,5 +762,23 @@ body {
   }
   .skill-title:after {
     font-size: clamp(45px, 6vw, 50px);
+  }
+  .right-home img {
+    padding-bottom: 100px;
+  }
+  .info-container {
+    width: 90%;
+  }
+  .info-container .info-title {
+    flex-direction: column;
+  }
+  .info-container .info-title h3 {
+    font-size: 20px;
+  }
+  .info-container .info-title p {
+    margin-top: 5px;
+  }
+  .experience-title {
+    font-size: 35px;
   }
 }

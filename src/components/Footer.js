@@ -15,9 +15,7 @@ const Footer = () => {
       <div class="container">
         <div class="footer__content">
           <div class="fotter__groups">
-            <p class="fotter__p">
-              This Website is Designed & Developed by <b>Lorik Rama</b>
-            </p>
+            <p class="fotter__p">Copyright &copy; 2024 LorikRama </p>
             <div class="fotter__sm">
               <Link to="https://instagram.com/lorikramaa" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} />
