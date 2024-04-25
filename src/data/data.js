@@ -3,6 +3,7 @@ import two from "../assets/6.png";
 import three from "../assets/1.png";
 import forth from "../assets/5.png";
 import fifth from "../assets/4.png";
+import sixth from "../assets/7.png";
 export const data = [
   {
     id: 1,
@@ -12,6 +13,14 @@ export const data = [
     url: "https://innovationacademy-ks.com/bookingkosova",
     description:
       "A Web Application for Kosovo's tourists that help them to spend a great time in Kosovo",
+  },
+  {
+    id: 7,
+    title: "Unique Ab",
+    image: sixth,
+    description:
+      "An E-commerce for an bracelet brand client to make his brand more serious in their industry ",
+    url: "https://unique-ab.com/",
   },
   {
     id: 2,
