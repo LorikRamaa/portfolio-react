@@ -21,7 +21,6 @@ const Navbar = () => {
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth" });
     console.log(element);
-    // const navLinks = document.querySelectorAll(".nav-links a");
   };
 
   useEffect(() => {
