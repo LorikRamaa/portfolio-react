@@ -66,7 +66,6 @@ body {
 }
 .logo-text {
   color: #f1f1f1;
-
   text-decoration: none;
   font-weight: 800;
   font-size: 22px;
@@ -163,7 +162,7 @@ body {
 }
 .home-div {
   display: flex;
-  width: 75vw;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -358,8 +357,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 35px;
-
+  margin-top: 50px;
+  gap: 35px;
   flex-wrap: wrap;
 }
 .skill {
@@ -370,7 +369,6 @@ body {
   min-width: 15%;
   max-width: 16%;
   color: #fff;
-  margin: 25px 30px;
 }
 .skill svg {
   font-size: 55px;
@@ -427,20 +425,44 @@ body {
 #Experience {
   margin-top: 30px;
 }
+.experience-box {
+  padding: 70px 0;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.experience-box-year {
+  width: 30%;
+  background-color: #007bff;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 7px 7px 0 0 #fff;
+  padding: 30px;
+}
+.experience-box-year h1 {
+  font-size: 300px;
+  color: #fff;
+}
+.experience-box-year p {
+  font-size: 35px;
+  color: #fff;
+  font-family: "Satisfy", cursive;
+}
 .experience-container {
   display: flex;
+  width: 70%;
   flex-direction: column;
-  /* height: 80vh; */
-  padding: 70px 0;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 .info-container {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
   color: #fff;
-  margin: 30px 0;
+  /* margin: 30px 0; */
 }
 .experience-container .info-title {
   display: flex;
@@ -462,20 +484,25 @@ body {
 }
 .works-content {
   margin-top: 40px;
+  width: 100%;
 }
 .works-detail {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: -5px 0 -5px 0;
+  gap: 30px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #000;
 }
 .work-image {
-  max-width: 45%;
-  min-width: 48.3%;
+  width: 50%;
 }
 
 .work-image img {
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -485,24 +512,38 @@ body {
 .works-detail-text h2 {
   font-size: 30px;
 }
+.works-detail-text-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.works-detail-text-tech span {
+  padding: 8px 18px;
+  background-color: #007bff;
+  border-radius: 40px;
+}
 .works-detail .works-detail-text {
-  width: 45%;
-  padding: 0 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: space-between;
   color: #f1f1f1;
 }
-.works-detail-text p {
-  margin: 10px 0 20px 0;
+.works-detail-text-info p {
+  margin-top: 10px;
   color: #ccc;
 }
 .works-detail .works-detail-text .works-btn {
   border: none;
   background-color: #007bff;
-  border-radius: 5px;
+  border-radius: 40px;
   overflow: hidden;
+  width: fit-content;
   transition: 0.3s linear;
   color: #fff;
   text-decoration: none;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 1.5rem;
   font-size: 14px;
 }
 .works-detail .works-detail-text .works-btn:hover {

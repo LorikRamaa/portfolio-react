@@ -22,11 +22,18 @@ const Works = () => {
           {data.map((work) => (
             <div className="works-detail">
               <div className="work-image">
-                <img alt={"asdwasd"} src={work.image} />
+                <img alt="work" src={work.image} />
               </div>
               <div className="works-detail-text">
-                <h2>{work.title}</h2>
-                <p>{work.description}</p>
+                <div className="works-detail-text-tech">
+                  {work.tech.map((lang, index) => (
+                    <span key={index}>{lang}</span>
+                  ))}
+                </div>
+                <div className="works-detail-text-info">
+                  <h2>{work.title}</h2>
+                  <p>{work.description}</p>
+                </div>
                 {checkForLink(work)}
               </div>
             </div>

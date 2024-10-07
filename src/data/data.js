@@ -13,6 +13,7 @@ export const data = [
     url: "https://innovationacademy-ks.com/bookingkosova",
     description:
       "A Web Application for Kosovo's tourists that help them to spend a great time in Kosovo",
+    tech: ["JavaScript"],
   },
   {
     id: 7,
@@ -21,6 +22,7 @@ export const data = [
     description:
       "An E-commerce for an bracelet brand client to make his brand more serious in their industry ",
     url: "https://unique-ab.com/",
+    tech: ["WordPress", "WooCommerce", "Stripe"],
   },
   {
     id: 2,
@@ -28,6 +30,7 @@ export const data = [
     image: two,
     description:
       "A digital wallet Web Application to buy, trade, and view crypto currencies",
+    tech: ["JavaScript"],
     url: "https://lorikramaa.github.io/CoinTracker/",
   },
   {
@@ -36,6 +39,7 @@ export const data = [
     image: three,
     description:
       "A Website to an artcitecture company for showing their servicies",
+    tech: ["Web design", "JavaScript"],
     url: null,
   },
   {
@@ -45,6 +49,7 @@ export const data = [
     description:
       "A Website that teachs people around the world to prevent from cyber attacks, cyber bullying,etc",
     url: "https://innovationacademy-ks.com/laksh/cyber%20security/index.html",
+    tech: ["Web design", "JavaScript"],
   },
   {
     id: 5,
@@ -53,5 +58,6 @@ export const data = [
     description:
       "A Website for an angency to share their servicies and make people comunicate with them",
     url: null,
+    tech: ["Web design", "JavaScript"],
   },
 ];
