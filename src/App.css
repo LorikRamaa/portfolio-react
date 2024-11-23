@@ -748,7 +748,10 @@ body {
   }
   .works-detail {
     flex-direction: column;
-    width: 90%;
+    width: 80%;
+  }
+  .work-image {
+    width: 100%;
   }
   .about-content {
     width: 95%;
@@ -771,6 +774,15 @@ body {
   }
 }
 @media screen and (max-width: 650px) {
+  .experience-box-year {
+    width: 70%;
+  }
+  .experience-box-year h1 {
+    font-size: 200px;
+  }
+  .experience-container {
+    width: 100%;
+  }
   .skill {
     min-width: 40%;
   }
