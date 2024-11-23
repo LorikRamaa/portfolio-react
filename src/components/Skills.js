@@ -6,9 +6,10 @@ import {
   faJs,
   faReact,
   faWordpress,
-  faBootstrap,
+  // faBootstrap,
   faFigma,
   faGithub,
+  faPhp,
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,11 +25,6 @@ const Skills = () => {
       icon: <FontAwesomeIcon icon={faCss3} />,
       percent: "90%",
       text: "CSS",
-    },
-    {
-      icon: <FontAwesomeIcon icon={faBootstrap} />,
-      percent: "70%",
-      text: "Bootstrap",
     },
     {
       icon: <FontAwesomeIcon icon={faSass} />,
@@ -49,6 +45,11 @@ const Skills = () => {
       icon: <FontAwesomeIcon icon={faWordpress} />,
       percent: "90%",
       text: "Wordpress",
+    },
+    {
+      icon: <FontAwesomeIcon icon={faPhp} />,
+      percent: "60%",
+      text: "PHP",
     },
     {
       icon: <FontAwesomeIcon icon={faGit} />,
